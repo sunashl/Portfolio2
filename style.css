@@ -556,7 +556,6 @@ form {
   margin: 20px auto;
   padding: 40px 30px;
   width: 40vw;
-  min-width: 400px;
 }
 
 label[for="name"],
