@@ -1,154 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="images/logo.svg" alt="logo" />
-          Suna
-        </a>
-        <nav class="header__nav">
-          <a href="#works" class="header__link">Work</a>
-          <a href="#visual" class="header__link">Visual</a>
-          <a href="#projects" class="header__link">Projects</a>
-          <a href="#contact" class="header__link">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <section class="welcome">
-        <div class="container">
-          <div class="welcome__desc">
-            <h1 class="welcome__title">
-              Привет, меня зовут Глеб, я продакт-дизайнер из Санкт-Петербурга
-            </h1>
-            <p class="welcome__text">
-              Я помогаю компаниям и предприятиям достигать своих целей, разрабатывая
-цифровые продукты и интерактивные решения, ориентированные на пользователя.
-            </p>
-          </div>
 
-          <img src="images/photo_2025-11-26_13-15-51.jpg" alt="#!" class="welcome__img" />
-        </div>
-      </section>
-      <section class="works" id="works">
-        <div class="container">
-          <button class="works__btn" type="button">
-            <img class="works__icon" src="images/arrow.svg" alt="" />
-            Лучшие работы
-          </button>
-          <div id="works__wrapper" class="works__wrapper">
-            <a href="#!" class="work">
-              <img src="images/work1.jpg" alt="" class="work__img" />
-              <span class="work__name">Work1</span>
-            </a>
-            <a href="#!" class="work">
-              <img src="images/work2.jpg" alt="" class="work__img" />
-              <span class="work__name">Work2</span>
-            </a>
-            <a href="#!" class="work">
-              <img src="images/work3.jpg" alt="" class="work__img" />
-              <span class="work__name">Work3</span>
-            </a>
-            <a href="#!" class="work">
-              <img src="images/work4.jpg" alt="" class="work__img" />
-              <span class="work__name">Work4</span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="projects" id="visual">
-        <div class="container">
-          <h2 class="title projects__title">Моя Графика</h2>
-          <div class="projects__wrapper">
-            <img src="images/visual1.jpg" class="projects__images" />
-            <img src="images/visual2.jpg" class="projects__images" />
-            <img src="images/visual3.jpg" class="projects__images" />
-            <img src="images/visual4.jpg" class="projects__images" />
-            <img src="images/visual5.jpg" class="projects__images" />
-            <img src="images/visual6.jpg" class="projects__images" />
-          </div>
-        </div>
-      </section>
-      <section class="projects projects--vertical" id="projects">
-        <div class="container">
-          <h2 class="title projects__title">Мои Проекты</h2>
-          <div class="projects__wrapper">
-            <img src="images/project1.jpg" class="projects__images" />
-            <img src="images/project2.jpg" class="projects__images" />
-            <img src="images/project3.jpg" class="projects__images" />
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="container">
-          <h2 class="title contact__title" id="contact">Связаться со мной
-          <p class="contact__text">
-            Если вы ищете продакт-дизайнера,            я готов решить вашу задачу.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="logo" />
+        Suna
+      </a>
+      <nav class="header__nav">
+        <a href="#works" class="header__link">Work</a>
+        <a href="#visual" class="header__link">Visual</a>
+        <a href="#projects" class="header__link">Projects</a>
+        <a href="#contact" class="header__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="welcome">
+      <div class="container">
+        <div class="welcome__desc">
+          <h1 class="welcome__title">Привет,</h1>
+          <h1 class="welcome__title">меня зовут Глеб, я продакт-дизайнер из Санкт-Петербурга</h1>
+          <p class="welcome__text">
+            Я помогаю компаниям и предприятиям достигать своих целей, разрабатывая
+            цифровые продукты и интерактивные решения, ориентированные на пользователя.
           </p>
-          <a class="btn contact__btn" href="mailto:shlyaevg@gmail.com"
-            >shlyaevg@gmail.com</a
-          >
-          <a class="btn contact__btn" href="tel:+79385350280"
-            >+7 (938) 535-02-80</a
-          >
         </div>
-        <div class="form--container">
-          <div class="form">
-            <p>Спасибо, что выбрали меня!</p>
-            <div class="container">
-              <form action="POST" method="post">
-                <label for="name" id="name-label">Имя</label>
-                <input
-                  required
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Введите ваше имя"
-                />
-                <label for="email" id="email-label">Email</label>
-                <input
-                  required
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Введите ваш Email"
-                />
-                <label for="message">Что вы хотели бы сделать?</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="4"
-                  cols="20"
-                ></textarea>
-                <button type="submit" id="submit-button">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="footer">
+        <img src="images/photo_2025-11-26_13-15-51.jpg" alt="#!" class="welcome__img" />
+      </div>
+    </section>
+    <section class="works" id="works">
       <div class="container">
-        <p class="footer__copy">
-          Made by <span>Gleb Shlyaev</span> - Copyright 2025
-        </p>
-        <div class="socials">
-          <a href="https://wa.me/79385350280" class="socials__link" target="_blank">
-            <img class="socials__img" src="images/social1.svg" />
+        <button class="works__btn" type="button">
+          <img class="works__icon" src="images/arrow.svg" alt="" />
+          Лучшие работы
+        </button>
+        <div id="works__wrapper" class="works__wrapper">
+          <a href="#!" class="work">
+            <img src="images/work1.jpg" alt="" class="work__img" />
+            <span class="work__name">Work1</span>
           </a>
-          <a href="https://t.me/glebassionchik" class="socials__link" target="_blank">
-            <img class="socials__img" src="images/social4.svg" />
+          <a href="#!" class="work">
+            <img src="images/work2.jpg" alt="" class="work__img" />
+            <span class="work__name">Work2</span>
+          </a>
+          <a href="#!" class="work">
+            <img src="images/work3.jpg" alt="" class="work__img" />
+            <span class="work__name">Work3</span>
+          </a>
+          <a href="#!" class="work">
+            <img src="images/work4.jpg" alt="" class="work__img" />
+            <span class="work__name">Work4</span>
           </a>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="projects" id="visual">
+      <div class="container">
+        <h2 class="title projects__title">Моя Графика</h2>
+        <div class="projects__wrapper">
+          <img src="images/visual1.jpg" class="projects__images" />
+          <img src="images/visual2.jpg" class="projects__images" />
+          <img src="images/visual3.jpg" class="projects__images" />
+          <img src="images/visual4.jpg" class="projects__images" />
+          <img src="images/visual5.jpg" class="projects__images" />
+          <img src="images/visual6.jpg" class="projects__images" />
+        </div>
+      </div>
+    </section>
+    <section class="projects projects--vertical" id="projects">
+      <div class="container">
+        <h2 class="title projects__title">Мои Проекты</h2>
+        <div class="projects__wrapper">
+          <img src="images/project1.jpg" class="projects__images" />
+          <img src="images/project2.jpg" class="projects__images" />
+          <img src="images/project3.jpg" class="projects__images" />
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h2 class="title contact__title" id="contact">Связаться со мной
+          <p class="contact__text">
+            Если вы ищете продакт-дизайнера, я готов решить вашу задачу.
+          </p>
+          <a class="btn contact__btn" href="mailto:shlyaevg@gmail.com">shlyaevg@gmail.com</a>
+          <a class="btn contact__btn" href="tel:+79385350280">+7 (938) 535-02-80</a>
+      </div>
+      <div class="form--container">
+        <div class="form">
+          <p>Спасибо, что выбрали меня!</p>
+          <div class="container">
+            <form action="POST" method="post">
+              <label for="name" id="name-label">Имя</label>
+              <input required type="text" name="name" id="name" placeholder="Введите ваше имя" />
+              <label for="email" id="email-label">Email</label>
+              <input required type="email" name="email" id="email" placeholder="Введите ваш Email" />
+              <label for="message">Что вы хотели бы сделать?</label>
+              <textarea name="message" id="message" rows="4" cols="20"></textarea>
+              <button type="submit" id="submit-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">
+        Made by <span>Gleb Shlyaev</span> - Copyright 2025
+      </p>
+      <div class="socials">
+        <a href="https://wa.me/79385350280" class="socials__link" target="_blank">
+          <img class="socials__img" src="images/social1.svg" />
+        </a>
+        <a href="https://t.me/glebassionchik" class="socials__link" target="_blank">
+          <img class="socials__img" src="images/social4.svg" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
